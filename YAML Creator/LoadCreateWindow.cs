@@ -111,10 +111,13 @@ namespace YAML_Creator
                 YAMLPath = ofd.FileName;
 
                 AssignToArea(YAMLPath);
-                RPHubLoad window = new RPHubLoad();
-                window.Show();
-                window.FormClosed += new FormClosedEventHandler(YAMLNameWindow_FormClosed);
-                Hide();
+                if (FullAreaList != null)
+                {
+                    RPHubLoad window = new RPHubLoad();
+                    window.Show();
+                    window.FormClosed += new FormClosedEventHandler(YAMLNameWindow_FormClosed);
+                    Hide();
+                }
             }
             else
             {
