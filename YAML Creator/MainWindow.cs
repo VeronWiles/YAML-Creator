@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static YAML_Creator.YAMLNameWindow;
+using static YAML_Creator.RPHubLoad;
 
 namespace YAML_Creator
 {
@@ -28,7 +29,7 @@ namespace YAML_Creator
 
             if(FullAreaList != null)
             {
-                RPHubName = FullAreaList[0].AreaNameList;
+                RPHubName = RPHub.AreaNameList;
                 foreach(Area a in FullAreaList)
                 {
                     AllAreasView.Items.Add(a.AreaNameList);

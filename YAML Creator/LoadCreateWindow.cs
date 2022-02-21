@@ -99,26 +99,29 @@ namespace YAML_Creator
         private void LoadButton_Click(object sender, EventArgs e)
         {
             FullAreaList = new List<Area>();
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.InitialDirectory = "c://";
-            ofd.Filter = "yaml files (*.yaml)|*.yaml";
-            ofd.FilterIndex = 1;
-            ofd.RestoreDirectory = true;
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                InitialDirectory = "c://",
+                Filter = "yaml files (*.yaml)|*.yaml",
+                FilterIndex = 1,
+                RestoreDirectory = true
+            };
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 YAMLPath = ofd.FileName;
 
                 AssignToArea(YAMLPath);
-                YAMLCreator window = new YAMLCreator();
+                RPHubLoad window = new RPHubLoad();
                 window.Show();
                 window.FormClosed += new FormClosedEventHandler(YAMLNameWindow_FormClosed);
                 Hide();
             }
             else
             {
-                MessageBox.Show("Please select a location to save your YAML to, to continue.");
+                MessageBox.Show("Please select a location to save your YAML to continue.");
             }
         }
+
         private void AssignToArea(string path)
         {
             int count = 0;
