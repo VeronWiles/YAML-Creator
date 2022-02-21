@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YAML Creator", "YAML Creator\YAML Creator.csproj", "{AC5873AC-F80E-431F-AA73-36A66D692D7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC5873AC-F80E-431F-AA73-36A66D692D7A}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5873AC-F80E-431F-AA73-36A66D692D7A}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{AC5873AC-F80E-431F-AA73-36A66D692D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5873AC-F80E-431F-AA73-36A66D692D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BE60988-C95A-4A16-95B5-4F554E980158}
+	EndGlobalSection
+EndGlobal
